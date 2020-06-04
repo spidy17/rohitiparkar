@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#navigation{
+    z-index: 10;
+    height: -20px;
+}
+
+#navigation .navbar-nav li{
+    padding: 0 10px;
+}
+
+#navigation .navbar-nav li a{
+    float: right;
+    text-align: right;
+}
+
+#navigation .navbar-nav li a:hover{
+    color: rgb(224, 45, 0);
+
+}
+
+#navigation .nav-toggler{
+    border: none;
+}
+
+#navigation .nav-link{
+    color:#555;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+#home{
+    background: rgb(59, 59, 59);
+    background-image: url('img/filler.png');
+    background-size: cover;
+    
+    height: 100vh;
+    
+}
+
+#home .flex{
+    text-align: left;
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 250px 0 0 0;
+    align-items: center;
+  
+}
+
+
+
+#home h1{
+    
+    padding-top: 10px;
+    font-size: 35px;
+    font-weight: 700;
+
+    color: seashell;
+    
+}
+
+#home p{
+    font-size: 25px;
+    color:white;
+    font-weight: 500;
+}
+
+.world,.webh{
+    color: yellow;
+}
+
+
+#home .button {
+    margin:10px 0 25px 0;
+    width:fit-content;
+    height: fit-content;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 2px;
+    transition: color 0.3s;
+    background: transparent;
+}
+
+#home .button:hover{
+    background: lightblue;
+    color:black;
+}
+
+
+
+#home ul{
+    position: absolute;
+    
+    margin-top: 35px;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home ul li{
+    
+list-style: none;
+align-items: center;
+    justify-content: center;
+
+}
+
+#home ul li a{
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    transition: .5s;
+
+}
+
+#home ul li a span {
+    position: absolute;
+    transition: transform .5s;
+}
+
+#home ul li a span:nth-child(1),
+#home ul li a span:nth-child(3)
+{
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+
+#home ul li a span:nth-child(1)
+{
+    
+    top:0;
+    left:0;
+    transform-origin: right;
+
+}
+
+#home ul li a:hover span:nth-child(1)
+{
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+#home ul li a span:nth-child(3)
+{
+    bottom: 0;
+    left:0;
+    transform-origin: left;
+
+}
+
+#home ul li a:hover span:nth-child(3)
+{
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+
+
+#home ul li a span:nth-child(2),
+#home ul li a span:nth-child(4)
+{
+    width: 1px;
+    height: 100%;
+    background:#fff;
+}
+
+#home ul li a span:nth-child(2)
+{
+    top:0;
+    left:0;
+    transform: scale(0);
+    transform-origin: bottom;
+
+}
+
+#home ul li a:hover span:nth-child(2)
+{
+    transform: scale(1);
+    transform-origin: top;
+    transition: transform .5s;
+}
+
+#home ul li a span:nth-child(4)
+{
+    top:0;
+    right:0;
+    transform: scale(0);
+    transform-origin: bottom;
+
+}
+
+#home ul li a:hover span:nth-child(4)
+{
+    transform: scale(1);
+    transform-origin: top;
+    transition: transform .5s;
+}
+
+/*about section*/
+#about{
+    padding: 50px;
+    text-align: center;
+}
+
+#about img{
+    padding: 15px 0 0 0;
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#about h2{
+    font-family: "raleway-bold";
+    padding: 15px 0 0 0;
+}
+
+#about .lead{
+    padding: 25px 0 0 0;
+    font-weight: 375;
+}
+
+
+#projects h2{
+    font-family: "raleway-bold";
+    padding: 65px 0 0 0;
+}
+
+#projects .card{
+    border-style: outset;
+    box-shadow: #555;
+    
+    background-color: lightyellow;
+    margin-top: 25px;
+}
+#projects .item-card{
+    transition:0.5s;
+    cursor:pointer;
+  }
+ #projects .card-title{  
+    font-size:20px;
+    transition:1s;
+    cursor:pointer;
+    color: rgb(179, 21, 0);
+  }
+  #projects .card-body{
+      height: 250px;
+      background-color: #E9F7E7;
+  }
+ #projects .item-card-title i{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+    color:#ffa710
+  }
+#projects .card-title i:hover{
+    transform: scale(1.25) rotate(100deg); 
+    color:#18d4ca;
+    
+  }
+  #projects .card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+  #projects .card-text{
+    height:80px;  
+  }
+  
+  #projects .card::before, .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+  }
+  #projects .card::before {
+    transform-origin: left top;
+  }
+  #projects .card::after {
+    transform-origin: right bottom;
+  }
+  #projects .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+
+  #projects .btn-primary{
+      margin: 50px 0 0 0;
+  }
+  
+
+#skills{
+    margin: 30px 0 10px;
+    padding: 0 0 15px 0;
+    background-color: #E9F7E7;
+}
+#skills h4{
+    margin-left: 25%;
+}
+
+#skills ul{
+    display: flex;
+}
+
+
+
+#skills .title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #db3a34;
+  }
+
+#skills .container {
+    margin-top: 20px;
+  }
+  
+  #skills h2 {
+    font-family: "raleway-bold";
+    padding: 65px 0 0 0;
+  }
+  
+  
+  
+ #skills .bar {
+    width: 90%;
+    height: 35px;
+    background: #fff;
+    border-radius: 5px;
+    border-color: #555;
+    position: relative;
+    transition: all 2s linear;
+  }
+  
+  #skills .bar-1,
+  .my-skills {
+    width: 80%;
+    margin: 10px auto 25px;
+  }
+  
+  #skills .bar-inner {
+    width: 0;
+    height: 35px;
+    line-height: 35px;
+    background: #db3a34;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  #skills .bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 18px;
+  }
+
+  #skills .cpp{
+      height: 40px;
+      width: 40px;
+      margin:0 0 5px 0 ;
+  }
+
+#contact{
+    background-color: #6f8c84;
+}
+
+#contact .card{
+    background-color:#6f8c84;
+    border: none;
+}
+#contact .card-header{
+    background-color: #6f8c84;
+    border: none;
+    font-family:raleway-bold;
+}
+#contact h2{
+    font-family: "raleway-bold";
+    color: white;
+    padding: 65px 0 25px 0;
+}
+
+#contact .getin{
+    margin-top: -40px;
+}
+
+#contact .btn{
+    border-style: dashed;
+    padding: 0 40px;
+    font-weight: bold;
+}
+ 
+#footer{
+    background-color: #263238;
+}
